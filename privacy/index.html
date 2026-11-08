@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung – BatteryNivo</title>
+  <meta name="description" content="Offizielle Datenschutzerklärung für die Android-App BatteryNivo von AppsMakerDeluxe. Vollständige Transparenz: 100% offline, lokal, keine Tracker, keine Werbung, kein Benutzerkonto.">
+  <meta property="og:title" content="Datenschutzerklärung – BatteryNivo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appsmakerdeluxe.github.io/batterynivo-privacy/privacy/">
+  <meta name="theme-color" content="#00adb5">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <img class="brand-icon" src="../assets/favicon.svg" alt="BatteryNivo Icon" width="32" height="32">
+        BatteryNivo
+      </a>
+      <nav class="nav" aria-label="Seitennavigation">
+        <a class="active" href="./">Datenschutz</a>
+        <a href="../support/">Support & FAQ</a>
+        <a href="../contact/">Kontakt</a>
+        <a class="lang-switch" href="../en/" title="Switch to English">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <p class="eyebrow">Datenschutz · Stand: September 2026</p>
+    <h1>Datenschutzerklärung</h1>
+
+    <div class="notice">
+      <strong>Kurzfassung:</strong> BatteryNivo ist als datenschutzfreundliche, offline-fähige Anwendung konzipiert. Wir erfassen, übertragen oder verkaufen zu keinem Zeitpunkt persönliche Daten. Alle Akkumesswerte verbleiben ausschließlich lokal auf deinem Smartphone.
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>Verantwortlicher für die Datenverarbeitung im Sinne der DSGVO und internationaler Datenschutzgesetze ist:</p>
+    <p>
+      <strong>AppsMakerDeluxe</strong><br>
+      E-Mail: <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a><br>
+      Website: <a href="https://appsmakerdeluxe.github.io/batterynivo-privacy/">https://appsmakerdeluxe.github.io/batterynivo-privacy/</a>
+    </p>
+
+    <h2>2. Grundsatz der Datenverarbeitung in der App</h2>
+    <p>BatteryNivo funktioniert <strong>vollständig lokal</strong> auf deinem Android-Gerät:</p>
+    <ul>
+      <li><strong>Kein Benutzerkonto:</strong> Du musst dich weder registrieren noch persönliche Angaben machen.</li>
+      <li><strong>Keine Werbung:</strong> Die App enthält keine Werbenetzwerke oder Werbe-SDKs.</li>
+      <li><strong>Keine Tracking- oder Analyse-Dienste:</strong> Es werden keine Analyse-SDKs (wie Google Analytics, Firebase Analytics etc.) eingebunden.</li>
+      <li><strong>Kein Cloud-Sync / Kein Server:</strong> Wir betreiben kein eigenes Backend, an welches Verlaufsdaten übermittelt werden.</li>
+    </ul>
+
+    <h2>3. Lokale Verarbeitung von Batteriedaten</h2>
+    <p>Um dir den aktuellen Akkuzustand, Ladezeiten, Verläufe und Warnungen bereitzustellen, liest BatteryNivo über standardmäßige Android-Betriebssystem-APIs (<code>android.os.BatteryManager</code>) folgende technische Gerätemesswerte aus:</p>
+    <ul>
+      <li>Aktueller Ladestand (%) und Ladestatus (Ladend, Entladend, Voll, Nicht ladend)</li>
+      <li>Akkuspannung (mV) und Akkutemperatur (°C / °F)</li>
+      <li>Aktuelle Stromstärke (mA / µA) und Ladequelle (Netzteil, USB, Induktiv)</li>
+      <li>Geschätzte Restlaufzeiten und vom System gemeldete Ladezyklen (wo hardwareseitig unterstützt)</li>
+    </ul>
+    <p>Diese Messwerte werden in einer lokalen SQLite-Datenbank (Room DB) auf deinem Gerät gespeichert, um dir Verlaufskurven und Ladesitzungen anzuzeigen. Du kannst diesen Verlauf in den Einstellungen der App jederzeit mit einem Fingertipp vollständig und unwiderruflich löschen.</p>
+
+    <h2>4. App-Berechtigungen (Permissions)</h2>
+    <p>BatteryNivo fordert ausschließlich technisch erforderliche Berechtigungen an:</p>
+    <ul>
+      <li><code>POST_NOTIFICATIONS</code> (ab Android 13): Erforderlich, um dich beim Erreichen von konfigurierten Ladezielen (z.B. 80%), bei niedrigem Akkustand oder Überhitzung zu benachrichtigen.</li>
+      <li><code>RECEIVE_BOOT_COMPLETED</code>: Ermöglicht das automatische Wiederaufnehmen der Benachrichtigungsüberwachung und Widgets nach einem Geräteneustart (nur sofern vom Nutzer aktiviert).</li>
+      <li><code>VIBRATE</code>: Ermöglicht haptisches Feedback bei Auslösen einer konfigurierten Akkuwarnung.</li>
+      <li><strong>Kein Foreground Service:</strong> BatteryNivo nutzt keine dauerhaften Foreground-Services, um den Akku des Geräts maximal zu schonen (0% Leerlaufverbrauch).</li>
+      <li><strong>Kein Internetzugriff:</strong> Die Anwendung benötigt keine <code>android.permission.INTERNET</code> Berechtigung für ihre Basisfunktionen.</li>
+      <li><strong>Keine sensiblen Berechtigungen:</strong> Kein Zugriff auf Standort, Kontakte, Kamera, Mikrofon oder private Mediendateien.</li>
+    </ul>
+
+    <h2>5. Datenexport & -sicherung</h2>
+    <p>Wenn du die Exportfunktion nutzt, um deine Verlaufsdaten als CSV- oder JSON-Datei zu sichern, geschieht dies über das sichere Android Storage Access Framework (SAF). Du bestimmst selbst den Speicherort. BatteryNivo hat keinen eigenständigen Zugriff auf deinen restlichen Gerätespeicher.</p>
+
+    <h2>6. Nutzung dieser Website (GitHub Pages)</h2>
+    <p>Diese Informations- und Support-Website wird über <strong>GitHub Pages</strong> (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) bereitgestellt. Beim Aufruf der Website werden durch den Webserver von GitHub technisch bedingte Verbindungsdaten (z.B. IP-Adresse, Datum/Uhrzeit des Abrufs, User-Agent) zur Auslieferung der Seiten und zur Gewährleistung der IT-Sicherheit in Server-Logfiles verarbeitet. Diese Website setzt keine Cookies und keine Tracking-Tools ein.</p>
+
+    <h2>7. Deine Rechte & Kontakt</h2>
+    <p>Da in der App keine personenbezogenen Daten auf unseren Servern verarbeitet werden, liegen alle Daten ausschließlich in deiner eigenen Hand auf deinem Endgerät. Du hast das Recht, gespeicherte Verläufe jederzeit innerhalb der App zu löschen oder die App samt aller lokalen Daten rückstandslos zu deinstallieren. Bei Fragen erreichst du uns jederzeit unter <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 AppsMakerDeluxe · BatteryNivo</div>
+      <div class="footer-links">
+        <a href="../contact/">Kontakt</a>
+        <a href="./">Datenschutz</a>
+        <a href="../support/">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

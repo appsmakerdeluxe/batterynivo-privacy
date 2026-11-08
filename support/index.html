@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support & FAQ – BatteryNivo</title>
+  <meta name="description" content="Hilfe, häufig gestellte Fragen und technischer Support für die Android-App BatteryNivo von AppsMakerDeluxe.">
+  <meta property="og:title" content="Support & FAQ – BatteryNivo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appsmakerdeluxe.github.io/batterynivo-privacy/support/">
+  <meta name="theme-color" content="#00adb5">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <img class="brand-icon" src="../assets/favicon.svg" alt="BatteryNivo Icon" width="32" height="32">
+        BatteryNivo
+      </a>
+      <nav class="nav" aria-label="Seitennavigation">
+        <a href="../privacy/">Datenschutz</a>
+        <a class="active" href="./">Support & FAQ</a>
+        <a href="../contact/">Kontakt</a>
+        <a class="lang-switch" href="../en/support/" title="Switch to English">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <p class="eyebrow">Hilfe & Anleitungen</p>
+    <h1>Support & Häufige Fragen</h1>
+
+    <div class="faq-item">
+      <h3>Warum zeigt BatteryNivo manche Werte (z.B. Ladezyklen oder Entladestrom) als „Nicht unterstützt“ an?</h3>
+      <p>Android-Geräte unterscheiden sich je nach Hersteller und verbautem Akkuschaltkreis (Fuel Gauge Chip). BatteryNivo liest ausschließlich reale Messwerte aus, die das Betriebssystem über den <code>BatteryManager</code> liefert. Wenn ein Gerätehersteller bestimmte Datenpunkte (wie Zyklen auf älteren Android-Versionen oder genaue mA-Werte) nicht bereitstellt, erfindet BatteryNivo keine Scheinwerte, sondern kennzeichnet diese ehrlich als nicht verfügbar.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wie funktioniert die Ladeziel-Warnung (z.B. bei 80 %)?</h3>
+      <p>Um die Langlebigkeit deines Akkus zu maximieren, empfehlen Experten, Lithium-Ionen-Akkus oft nur bis ca. 80–85 % aufzuladen. Du kannst in BatteryNivo unter <em>Alerts</em> einen beliebigen Schwellenwert aktivieren. Sobald dieser erreicht wird, ertönt ein Signalton, eine Vibration oder eine gesprochene Sprachansage (TTS), sodass du das Ladegerät rechtzeitig abstecken kannst.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Kann BatteryNivo das Laden automatisch bei 80 % stoppen?</h3>
+      <p>Nein. Standard-Android-Apps ohne Root-Zugriff haben aus Sicherheitsgründen keinen Zugriff auf die Hardware-Ladeelektronik. BatteryNivo warnt dich jedoch zuverlässig und unmittelbar, sobald dein Wunschwert erreicht ist.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wie richte ich die Home Screen Widgets ein?</h3>
+      <p>Halte eine freie Stelle auf deinem Android-Startbildschirm gedrückt, wähle „Widgets“ aus und scrolle zu <strong>BatteryNivo</strong>. Du findest dort verschiedene Größen (1×1, 2×1, 2×2 und 4×1), die du auf deinem Homescreen platzieren und anpassen kannst.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Braucht BatteryNivo viel Akku im Hintergrund?</h3>
+      <p>Nein. Im Standardmodus lauscht BatteryNivo rein ereignisbasiert auf Systemmeldungen und verbraucht im Leerlauf praktisch 0 % zusätzliche Energie. Wenn du den kontinuierlichen Modus für sekundengenaue Messungen aktivierst, wird dies über einen optimierten, sparsamen Hintergrunddienst abgewickelt.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wie kann ich meine Verlaufsdaten sichern oder exportieren?</h3>
+      <p>Öffne in der App den Reiter <em>Mehr</em> und wähle <em>Daten exportieren</em>. Du kannst deine Messhistorie als CSV-Tabelle oder als vollständiges JSON-Backup auf deinem Gerät oder in deiner Cloud speichern.</p>
+    </div>
+
+    <h2>Noch Fragen oder Feedback?</h2>
+    <p>Wir freuen uns über deine Nachricht. Kontaktiere unser Entwicklerteam direkt per E-Mail unter <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 AppsMakerDeluxe · BatteryNivo</div>
+      <div class="footer-links">
+        <a href="../contact/">Kontakt</a>
+        <a href="../privacy/">Datenschutz</a>
+        <a href="./">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

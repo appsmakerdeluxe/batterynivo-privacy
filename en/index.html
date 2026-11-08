@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – BatteryNivo</title>
+  <meta name="description" content="Official Privacy Policy for the BatteryNivo Android app by AppsMakerDeluxe. Total privacy: 100% offline, local storage, zero tracking, no ads, no account required.">
+  <meta property="og:title" content="Privacy Policy – BatteryNivo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appsmakerdeluxe.github.io/batterynivo-privacy/en/">
+  <meta name="theme-color" content="#00adb5">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <img class="brand-icon" src="../assets/favicon.svg" alt="BatteryNivo Icon" width="32" height="32">
+        BatteryNivo
+      </a>
+      <nav class="nav" aria-label="Site Navigation">
+        <a class="active" href="./">Privacy</a>
+        <a href="support/">Support & FAQ</a>
+        <a href="contact/">Contact</a>
+        <a class="lang-switch" href="../" title="Auf Deutsch wechseln">DE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <p class="eyebrow">Privacy Policy · Effective: September 2026</p>
+    <h1>Privacy Policy</h1>
+
+    <div class="notice">
+      <strong>Summary:</strong> BatteryNivo is built with privacy as its foundation. We never collect, transmit, share, or sell personal data. All battery metrics, diagnostics, and charging histories remain strictly on your local device.
+    </div>
+
+    <h2>1. Data Controller</h2>
+    <p>The responsible entity for data processing under GDPR and international privacy regulations is:</p>
+    <p>
+      <strong>AppsMakerDeluxe</strong><br>
+      Email: <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a><br>
+      Website: <a href="https://appsmakerdeluxe.github.io/batterynivo-privacy/">https://appsmakerdeluxe.github.io/batterynivo-privacy/</a>
+    </p>
+
+    <h2>2. Local Processing & Zero Data Collection</h2>
+    <p>BatteryNivo functions <strong>completely locally</strong> on your Android device:</p>
+    <ul>
+      <li><strong>No Account Required:</strong> You never need to register, log in, or provide personal details.</li>
+      <li><strong>No Advertisements:</strong> The app does not embed advertising SDKs or ad networks.</li>
+      <li><strong>No Analytics or Tracking:</strong> We do not integrate tracking frameworks (such as Google Analytics, Firebase Analytics, etc.).</li>
+      <li><strong>No Cloud Backend:</strong> We do not operate a remote server that collects your charging or usage history.</li>
+    </ul>
+
+    <h2>3. Battery & Hardware Telemetry Handled Locally</h2>
+    <p>To provide real-time battery status, health diagnostics, usage curves, and charging alerts, the app accesses standard Android OS metrics via official <code>android.os.BatteryManager</code> APIs:</p>
+    <ul>
+      <li>Battery percentage (%) and charging state (charging, discharging, full, not charging)</li>
+      <li>Battery voltage (mV) and temperature (°C / °F)</li>
+      <li>Instantaneous and average electric current (mA / µA), power source (AC, USB, Wireless)</li>
+      <li>Estimated time to full / time remaining, and system-reported cycle counts (when supported by hardware)</li>
+    </ul>
+    <p>All readings are stored exclusively in a local SQLite database (Room DB) on your device. You can purge all stored history and reset records at any time in the app settings.</p>
+
+    <h2>4. Android Permissions</h2>
+    <p>BatteryNivo requests only the minimum technical permissions required for its functionality:</p>
+    <ul>
+      <li><code>POST_NOTIFICATIONS</code> (Android 13+): Used to display notifications when your configured charge target (e.g. 80%), low battery, or temperature alerts trigger.</li>
+      <li><code>RECEIVE_BOOT_COMPLETED</code>: Used to restart background widget telemetry sampling automatically after rebooting your phone (only when enabled).</li>
+      <li><code>VIBRATE</code>: Provides tactile feedback when an alert threshold is reached.</li>
+      <li><strong>No Foreground Service:</strong> BatteryNivo does not run continuous foreground services, ensuring 0% idle battery drain.</li>
+      <li><strong>No Internet Permission:</strong> The core application does not require or request the <code>android.permission.INTERNET</code> permission.</li>
+      <li><strong>No Sensitive Permissions:</strong> No access to location, camera, microphone, contacts, or personal media files.</li>
+    </ul>
+
+    <h2>5. Data Export & Backups</h2>
+    <p>When you export your battery history as CSV or JSON, the operation uses the secure Android Storage Access Framework (SAF). You choose the exact destination. The app has no broad storage permissions.</p>
+
+    <h2>6. Hosting of this Website (GitHub Pages)</h2>
+    <p>This static support website is hosted on <strong>GitHub Pages</strong> (GitHub Inc., San Francisco, CA, USA). Server access logs (such as IP address and timestamp) are processed by GitHub solely for delivering the website securely. This website does not use cookies or tracking tools.</p>
+
+    <h2>7. Your Rights & Inquiries</h2>
+    <p>Because no personal data is transmitted to or held on remote servers, your data is always exclusively under your physical control. For any privacy-related questions, feel free to contact us at <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 AppsMakerDeluxe · BatteryNivo</div>
+      <div class="footer-links">
+        <a href="contact/">Contact</a>
+        <a href="./">Privacy</a>
+        <a href="support/">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

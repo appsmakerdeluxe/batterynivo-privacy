@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support & FAQ – BatteryNivo</title>
+  <meta name="description" content="Help, frequently asked questions, and technical support for the BatteryNivo Android app by AppsMakerDeluxe.">
+  <meta property="og:title" content="Support & FAQ – BatteryNivo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://appsmakerdeluxe.github.io/batterynivo-privacy/en/support/">
+  <meta name="theme-color" content="#00adb5">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <img class="brand-icon" src="../../assets/favicon.svg" alt="BatteryNivo Icon" width="32" height="32">
+        BatteryNivo
+      </a>
+      <nav class="nav" aria-label="Site Navigation">
+        <a href="../privacy/">Privacy</a>
+        <a class="active" href="./">Support & FAQ</a>
+        <a href="../contact/">Contact</a>
+        <a class="lang-switch" href="../../support/" title="Auf Deutsch wechseln">DE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <p class="eyebrow">Help & Guides</p>
+    <h1>Support & Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <h3>Why do some metrics (e.g. cycle count or discharge rate) show as "Unsupported"?</h3>
+      <p>Android devices and hardware fuel gauge chips vary across manufacturers. BatteryNivo only displays genuine data reported by the Android <code>BatteryManager</code> API. If your phone OEM does not expose a specific sensor value, BatteryNivo honestly marks it as unsupported instead of fabricating a fake number.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How does the charge target alert (e.g. at 80%) work?</h3>
+      <p>To preserve long-term battery lifespan, battery chemistry experts often advise charging lithium-ion cells up to 80–85%. You can set your desired threshold in BatteryNivo under <em>Alerts</em>. When reached, you'll receive a prompt notification, vibration, sound, or voice (TTS) alert to unplug your phone.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can BatteryNivo physically stop the charging process automatically?</h3>
+      <p>No. Standard Android apps without root access cannot disable hardware charging circuits due to OS security boundaries. BatteryNivo reliably notifies you the moment your goal is reached.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I add home screen widgets?</h3>
+      <p>Press and hold on an empty area of your Android home screen, tap "Widgets", and scroll down to <strong>BatteryNivo</strong>. Choose from compact (1×1), medium (2×1, 2×2), or wide (4×1) widgets.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does BatteryNivo drain battery in the background?</h3>
+      <p>No. In Standard Mode, BatteryNivo relies on lightweight, event-driven OS broadcasts and draws essentially 0% idle energy. Continuous Monitoring uses an efficient, optimized foreground service designed for minimal power footprint.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can I back up or export my battery logs?</h3>
+      <p>Navigate to the <em>More</em> tab in the app and select <em>Export Data</em>. You can save your complete history as a CSV spreadsheet or JSON backup.</p>
+    </div>
+
+    <h2>Have Questions or Suggestions?</h2>
+    <p>We are always eager to assist. Reach our development team at <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 AppsMakerDeluxe · BatteryNivo</div>
+      <div class="footer-links">
+        <a href="../contact/">Contact</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="./">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
